@@ -21,7 +21,7 @@ The music player app includes the following features:
 
 - Play/pause, skip, and rewind tracks
 
-- Adjust volume and playback speed
+- Adjust volume 
 
 - Shuffle and repeat playback
 
