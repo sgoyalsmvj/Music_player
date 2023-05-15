@@ -35,5 +35,3 @@ The app is built using the following technologies:
 - Tailwind CSS
 
 - Vite
-
-- Axios
