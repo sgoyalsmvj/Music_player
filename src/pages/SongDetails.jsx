@@ -1,3 +1,9 @@
-const SongDetails = () => <div>SongDetails</div>;
+import React from 'react'
 
-export default SongDetails;
+const SongDetails = () => {
+  return (
+    <div>SongDetails</div>
+  )
+}
+
+export default SongDetails
