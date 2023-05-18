@@ -30,7 +30,9 @@ The app is built using the following technologies:
 
 - React
 
-- Redux
+- Axios
+
+- react-router-dom
 
 - Tailwind CSS
 
