@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./ui/Sidebar";
+import SearchBar from "./ui/SearchBar";
+import TopPlay from "./ui/TopPlay";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} relative flex`}>
+        <Sidebar />
+        <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#121286]">
+          <SearchBar />
+          <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar flex xl:flex-row flex-col-reverse">
+            <div className="flex-1 h-fit pb-40"> {children}</div>
+            <div className="xl:sticky relative top-0 h-fit">
+              <TopPlay />
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

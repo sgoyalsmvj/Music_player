@@ -7,6 +7,7 @@ interface PageProps {
 const Page: React.FC<PageProps> = () => {
     return (
         <div>
+            Hello discover page
             {/* Add your component content here */}
         </div>
     );
