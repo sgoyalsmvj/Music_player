@@ -14,10 +14,10 @@ interface SidebarProps {
   // Define props here
 }
 const links = [
-  { name: "Discover", to: "/discover", icon: HiOutlineHome },
+  { name: "Discover", to: "/", icon: HiOutlineHome },
   { name: "Around You", to: "/aroundyou", icon: HiOutlinePhotograph },
-  { name: "Top Artists", to: "/topartists", icon: HiOutlineUserGroup },
-  { name: "Top Charts", to: "/topcharts", icon: HiOutlineHashtag },
+  { name: "Top Artists", to: "/topArtists", icon: HiOutlineUserGroup },
+  { name: "Top Charts", to: "/topCharts", icon: HiOutlineHashtag },
 ];
 
 const NavLinks = () => (

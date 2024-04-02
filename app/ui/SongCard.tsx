@@ -1,12 +1,21 @@
 import React from 'react';
 
-interface SongCardProps {
+interface Song {
+    key: string;
     title: string;
     artist: string;
     album: string;
 }
 
-const SongCard: React.FC<SongCardProps> = ({ title, artist, album }) => {
+interface SongCardProps {
+    song: Song;
+    isPlaying: boolean;
+    activeSong: string;
+}
+
+const SongCard: React.FC<SongCardProps> = ({ song, isPlaying, activeSong }) => {
+    const { title, artist, album } = song;
+
     return (
         <div>
             <h2>{title}</h2>

@@ -1,14 +1,14 @@
 import React from 'react';
 
 interface ErrorProps {
-    message: string;
+   
 }
 
-const Error: React.FC<ErrorProps> = ({ message }) => {
+const Error: React.FC<ErrorProps> = () => {
     return (
         <div>
             <h1>Error</h1>
-            <p>{message}</p>
+            <p>message</p>
         </div>
     );
 };
